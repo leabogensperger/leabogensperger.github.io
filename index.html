@@ -21,8 +21,8 @@
                     <p class="name" style="text-align: center;">
                       Lea Bogensperger
                     </p>
-                    <p>I'm a PhD student at TU Graz.</p>
-                    <p>During my PhD I worked on xx.</p>
+                    <p>I am a postdoctoral researcher at the Institute of Computer Graphics and Vision, Graz University of Technology.  I defended my PhD thesis "Variational Methods in Imaging Meet Machine Learning" in June 2024, which was supervised by Prof. Thomas Pock and with Prof. Carola-Bibiane Schönlieb as my external referee. During my PhD I worked on inverse problems in medical imaging, bilevel optimization as well as generative modeling using diffusion models and flow matching for image segmentation.  
+                    </p>
                     <p style="text-align:center">
                       <a href="mailto:lea.bogensperger@gmail.com">Email</a> &nbsp;/&nbsp;
                       <a href="https://scholar.google.com/citations?user=4cNGQ0sAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
@@ -41,17 +41,355 @@
                   <td style="padding:20px;width:100%;vertical-align:middle">
                     <h2>Research</h2>
                     <p>
-                      I'm interested in inverse problems in medical imaging as well as deep learning and generative modeling. Some papers are <span class="highlight">highlighted</span>.
+                      I'm interested in inverse problems in medical imaging as well as deep learning and generative modeling. * indicates equal contribution. 
+                      <!-- Some papers are <span class="highlight">highlighted</span>. -->
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
-              <tbody>
-                <!-- Add any other sections here -->
-              </tbody>
-            </table>
+            
+            
+      <!--
+        - #RESUME
+      -->
+      
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        
+        <!-- FlowSDF -->
+        <tr onmouseout="flowsdf_stop()" onmouseover="flowsdf_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='flowsdf_image'>
+                <img src='images/flowsdf.png' width="160"></div>
+              <img src='images/flowsdf.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function flowsdf_image() {
+                document.getElementById('flowsdf_image').style.opacity = "1";
+              }
+  
+              function flowsdf_image() {
+                document.getElementById('flowsdf_image').style.opacity = "0";
+              }
+              flowsdf_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2405.18087">
+              <span class="papertitle">FlowSDF: Flow Matching for Medical Image Segmentation Using Distance Transforms</span>
+            </a>
+            <br> 
+            <strong>Lea Bogensperger*</strong></a>, 
+            Dominik Narnhofer*</a>, 
+            Alexander Falk</a>, 
+            Konrad Schindler</a>, 
+            Thomas Pock</a>, 
+            <br>
+            <em>under review</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2405.18087">arXiv</a>
+            <p></p>
+            <p>
+              A flow matching framework for generative segmentation of medical images using signed distance functions. This integration allows the noise-injection perturbation
+              process to canonically smooth the distribution of SDF masks.
+            </p>
+          </td>
+        </tr>		
+          </td>
+        </tr>
+
+
+        <!-- GCPR Score-based Segm. -->
+        <tr onmouseout="scorebased_segmentation_stop()" onmouseover="scorebased_segmentation_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='scorebased_segmentation_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/sampling_sdf.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+
+            <script type="text/javascript">
+              function scorebased_segmentation_image() {
+                document.getElementById('scorebased_segmentation_image').style.opacity = "1";
+              }
+  
+              function scorebased_segmentation_image() {
+                document.getElementById('scorebased_segmentation_image').style.opacity = "0";
+              }
+              scorebased_segmentation_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2303.05966">
+              <span class="papertitle">Score-Based Generative Models for Medical Image Segmentation using Signed Distance Functions</span>
+            </a>
+            <br> 
+            <strong>Lea Bogensperger</strong></a>, 
+            Dominik Narnhofer</a>, 
+            Filip Ilic</a>, 
+            Thomas Pock</a>, 
+            <br>
+            <em>DAGM German Conference on Pattern Recognition</em>, 2023 &nbsp <font color="red"><strong>(Honorable Mention)</strong></font>
+            <br>
+            <a href="https://arxiv.org/abs/2303.05966">arXiv</a>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-54605-1_1">paper</a>
+            <a href="https://github.com/leabogensperger/generative-segmentation-sdf">code</a>
+            <p></p>
+            <p>
+              A score-based generative model for binary medical image segmentation using signed distance functions. Thereby, the corruptive mechanism by the diffusion model acts on SDF masks instead of the binary masks which yields a more natural distortion. 
+            </p>
+          </td>
+        </tr>		
+          </td>
+        </tr>
+
+      <!-- Learned TGV Disc -->
+      <tr onmouseout="tgv_stop()" onmouseover="tgv_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='tgv_image'>
+              <img src='images/tgv.png' width="160"></div>
+            <img src='images/tgv.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function tgv_image() {
+              document.getElementById('tgv_image').style.opacity = "1";
+            }
+
+            function tgv_image() {
+              document.getElementById('tgv_image').style.opacity = "0";
+            }
+            tgv_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2303.09349">
+            <span class="papertitle">Learned Discretization Schemes for the Second-Order Total Generalized Variation</span>
+          </a>
+          <br> 
+          <strong>Lea Bogensperger</strong></a>, 
+          Antonin Chambolle</a>, 
+          Alexander Effland</a>, 
+          Thomas Pock</a>, 
+          <br>
+          <em>International Conference on Scale Space and Variationa Methods in Computer Vision</em>, 2023 
+          <br>
+          <a href="https://arxiv.org/abs/2303.09349">arXiv</a>
+          <a href="https://link.springer.com/chapter/10.1007/978-3-031-31975-4_37">paper</a>
+          <a href="https://github.com/leabogensperger/tgv-disc-learning">code</a>
+          <p></p>
+          <p>
+            We introduce a framework to incorporate general discretization schemes for the second-order total generalized variation (TGV), for which we show variational consistency. Interpolation filters are then learned using a piggyback algorithm. 
+          </p>
+        </td>
+      </tr>		
+        </td>
+      </tr>
+
+       <!-- Joint tomo alignment reco -->
+       <tr onmouseout="tomo_stop()" onmouseover="tomo_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='tomo_image'>
+              <img src='images/tomo.png' width="160"></div>
+            <img src='images/tomo.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function tomo_image() {
+              document.getElementById('tomo_image').style.opacity = "1";
+            }
+
+            function tomo_image() {
+              document.getElementById('tomo_image').style.opacity = "0";
+            }
+            tomo_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://link.springer.com/article/10.1007/s00418-022-02095-z">
+            <span class="papertitle">A joint alignment and reconstruction algorithm for electron tomography to visualize in-depth cell-to-cell interactions</span>
+          </a>
+          <br> 
+          <strong>Lea Bogensperger</strong></a>, 
+          Erich Kobler</a>, 
+          Dominique Pernitsch</a>, 
+          Petra Kotzbeck</a>, 
+          Thomas R. Pieber</a>, 
+          Thomas Pock</a>, 
+          Dagmar Kolb</a>, 
+          <br>
+          <em>Histochemistry and Cell Biology</em>, 2022 
+          <br>
+          <a href="https://link.springer.com/article/10.1007/s00418-022-02095-z">paper</a>
+          <a href="https://github.com/leabogensperger/tem-reco">code</a>
+          <p></p>
+          <p>
+            We develop a joint alignment and reconstruction algorithm for electron tomography that does not require the use of fiducial markers. We show its application within type 1 diabetes research to non-obese diabetic (NOD) mice to study the interaction between immune cells and pancreatic beta cells. 
+          </p>
+        </td>
+      </tr>		
+        </td>
+      </tr>
+
+      <!-- Piggyback -->
+      <tr onmouseout="piggyback_stop()" onmouseover="piggyback_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='piggyback_image'>
+            <img src='images/piggyback.png' width="160"></div>
+          <img src='images/piggyback.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function piggyback_image() {
+            document.getElementById('piggyback_image').style.opacity = "1";
+          }
+
+          function piggyback_image() {
+            document.getElementById('piggyback_image').style.opacity = "0";
+          }
+          piggyback_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://epubs.siam.org/doi/10.1137/21M1455887">
+          <span class="papertitle">Convergence of a Piggyback-style method for the differentiation of solutions of standard saddle-point problems</span>
+        </a>
+        <br> 
+        <strong>Lea Bogensperger</strong></a>, 
+        Antonin Chambolle</a>, 
+        Thomas Pock</a>, 
+        <br>
+        <em>SIAM Journal on Mathematics of Data Science</em>, 2022 
+        <br>
+        <a href="https://epubs.siam.org/doi/10.1137/21M1455887">paper</a>
+        <a href="https://hal.science/hal-03516542/file/GradPDLoss-revised.pdf">preprint</a>
+        <p></p>
+        <p>
+          We develop a joint alignment and reconstruction algorithm for electron tomography that does not require the use of fiducial markers. We show its application within type 1 diabetes research to non-obese diabetic (NOD) mice to study the interaction between immune cells and pancreatic beta cells. 
+        </p>
+      </td>
+    </tr>		
+      </td>
+    </tr>
+
+     <!-- Granule Counting -->
+     <tr onmouseout="granule_counting_stop()" onmouseover="granule_counting_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='granule_counting_image'>
+            <img src='images/granule_counting.png' width="160"></div>
+          <img src='images/granule_counting.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function granule_counting_image() {
+            document.getElementById('granule_counting_image').style.opacity = "1";
+          }
+
+          function granule_counting_image() {
+            document.getElementById('granule_counting_image').style.opacity = "0";
+          }
+          granule_counting_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://openlib.tugraz.at/download.php?id=621f317b6bc82&location=browse">
+          <span class="papertitle">On the Influence of Beta Cell Granule Counting
+            for Classification in Type 1 Diabetes</span>
+        </a>
+        <br> 
+        <strong>Lea Bogensperger</strong></a>, 
+        Marc Masana</a>, 
+        Filip Ilic</a>, 
+        Dagmar Kolb</a>,
+        Thomas R. Pieber</a>, 
+        Thomas Pock</a>, 
+        <br>
+        <em>Computer Vision and Pattern Analysis Across Domains</em>, 2021 
+        <br>
+        <a href="https://graz.elsevierpure.com/en/publications/on-the-influence-of-beta-cell-granule-counting-for-classification">paper</a>
+        <p></p>
+        <p>
+          We use a deep learning approach to investigate the influence of insulin granules in pancreatic beta cells of NOD mice. In a multi-task learning setting, the regression task can aid in discriminating healthy from diabetic samples.
+        </p>
+      </td>
+    </tr>		
+      </td>
+    </tr>
+
+      <!-- Granule Counting -->
+      <tr onmouseout="grain_stop()" onmouseover="grain_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='grain_image'>
+            <img src='images/grain.png' width="160"></div>
+          <img src='images/grain.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function grain_image() {
+            document.getElementById('grain_image').style.opacity = "1";
+          }
+
+          function grain_image() {
+            document.getElementById('grain_image').style.opacity = "0";
+          }
+          grain_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://graz.elsevierpure.com/en/publications/a-study-on-robust-feature-representations-for-grain-density-estim">
+          <span class="papertitle"> 	
+            A study on robust feature representations for grain density estimates in austenitic steel</span>
+        </a>
+        <br> 
+        Filip Ilic</a>, 
+        Marc Masana</a>,
+        <strong>Lea Bogensperger</strong></a>,  
+        Harald Ganster</a>, 
+        Thomas Pock</a>, 
+        <br>
+        <em>Computer Vision and Pattern Analysis Across Domains</em>, 2021 
+        <br>
+        <a href="https://graz.elsevierpure.com/en/publications/a-study-on-robust-feature-representations-for-grain-density-estim">paper</a>
+        <a href="https://github.com/f-ilic/RobustFeatureAustenit">code</a>
+        <p></p>
+        <p>
+          We show that deep neural networks can be used to estimate grain density of austenitic steel. Thereby we compare classification and regression models, showing that the learned feature representations are vastly different. 
+        </p>
+      </td>
+    </tr>		
+      </td>
+    </tr>
+
+      </tbody></table>
+
+      
+    
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+        <tr>
+          <td>
+            <h2>Miscellanea</h2>
+          </td>
+        </tr>
+      </tbody></table>
+      <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+        
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/toy_generative_models.png" width="160"></td>
+          <td width="75%" valign="center">
+            <a href="docs/generative_models.pdf" target="_blank">Lecture Notes for Generative Modeling</a>
+            <br>
+            <a href="https://github.com/leabogensperger/toy_generative_models">code</a>
+          </td>
+        </tr>
+
+      </table>
+
+
+
+
+
             <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
               <tbody>
                 <tr>
