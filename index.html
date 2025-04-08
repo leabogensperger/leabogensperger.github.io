@@ -21,10 +21,10 @@
                     <p class="name" style="text-align: center;">
                       Lea Bogensperger
                     </p>
-                    <p>I am a postdoctoral researcher in the Krauthammer Lab at the Department of Quantitative Biomedicine at the University of Zurich. Prior to that, I worked as a doctoral researcher at the Institute of Computer Graphics and Vision, Graz University of Technology. I defended my PhD thesis "Variational Methods in Imaging Meet Machine Learning" in June 2024, which was supervised by Prof. Thomas Pock and with Prof. Carola-Bibiane Schönlieb as my external referee. During my PhD I worked on inverse problems in medical imaging, bilevel optimization as well as generative modeling using diffusion models and flow matching for image segmentation.  
+                    <p>I am a postdoctoral researcher in the <a href="https://krauthammerlab.ch">Krauthammer Lab</a> at the Department of Quantitative Biomedicine at the University of Zurich. Prior to that, I worked as a doctoral researcher at the Institute of Computer Graphics and Vision, Graz University of Technology. I defended my PhD thesis "Variational Methods in Imaging Meet Machine Learning" in June 2024, which was supervised by Prof. Thomas Pock and with Prof. Carola-Bibiane Schönlieb as my external referee. During my PhD I worked on inverse problems in medical imaging, bilevel optimization as well as generative modeling using diffusion models and flow matching for image segmentation.  
                     </p>
                     <p style="text-align:center">
-                      <a href="mailto:lea.bogensperger@gmail.com">Email</a> &nbsp;/&nbsp;
+                      <a href="mailto:lea.bogensperger@uzh.ch">Email</a> &nbsp;/&nbsp;
                       <a href="https://scholar.google.com/citations?user=4cNGQ0sAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
                       <a href="https://github.com/leabogensperger/">GitHub</a>
                     </p>
@@ -41,7 +41,7 @@
                   <td style="padding:20px;width:100%;vertical-align:middle">
                     <h2>Research</h2>
                     <p>
-                      I'm interested in inverse problems in medical imaging as well as deep learning and generative modeling. * indicates equal contribution. 
+                      I'm interested in protein design, particularly in optimizing protein fitness using generative modeling and protein language models. Additionally, I have a strong interest in inverse problems in medical imaging. * indicates equal contribution. 
                       <!-- Some papers are <span class="highlight">highlighted</span>. -->
                     </p>
                   </td>
@@ -55,8 +55,71 @@
       -->
       
 
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <!-- VLGPO -->
+        <tr>
+          <!-- Image cell -->
+          <td style="padding:20px;width:25%;vertical-align:top;">
+            <div class="one">
+              <img src='images/vlgpo.png' width="180">
+            </div>
+          </td>
+    
+          <!-- Text cell -->
+          <td style="padding:20px;width:75%;vertical-align:top;">
+            <a href="https://arxiv.org/abs/2501.19200">
+              <span class="papertitle">A Variational Perspective on Generative Protein Fitness Optimization</span>
+            </a>
+            <br> 
+            <strong>Lea Bogensperger</strong>, 
+            Dominik Narnhofer, 
+            Ahmed Allam, 
+            Konrad Schindler, 
+            Michael Krauthammer 
+            <br>
+            <em>under review</em>, 2025
+            <br>
+            <a href="https://arxiv.org/abs/2501.19200">arXiv</a>
+            <p></p>
+            <p>
+              A variational framework for generative protein fitness optimization using a flow matching prior and a classifier-guidance model in a continuous latent space is introduced. 
+            </p>
+          </td>
+        </tr>
+
+
+            <!-- FlowSDF -->
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/flowsdf.png' width="160">
+                    </div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2405.18087">
+                      <span class="papertitle">FlowSDF: Flow Matching for Medical Image Segmentation Using Distance Transforms</span>
+                    </a>
+                    <br> 
+                    <strong>Lea Bogensperger*</strong></a>, 
+                    Dominik Narnhofer*</a>, 
+                    Alexander Falk</a>, 
+                    Konrad Schindler</a>, 
+                    Thomas Pock</a> 
+                    <br>
+                    <em>International Journal of Computer Vision</em>, 2025
+                    <br>
+                    <a href="https://arxiv.org/abs/2405.18087">arXiv</a>
+                    <a href="https://link.springer.com/article/10.1007/s11263-025-02373-y">paper</a>
+                    <a href="https://github.com/leabogensperger/FlowSDF">code</a>
+                    <p></p>
+                    <p>
+                      A flow matching framework for generative medical image segmentation using signed distance functions that enables canonical smoothing of SDF mask distributions through noise injection.
+                    </p>
+                  </td>
+                </tr>		
+                  </td>
+                </tr>
+
                 <!-- AdaptivePiggy -->
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -79,7 +142,7 @@
                   <a href="https://arxiv.org/pdf/2412.06436">arXiv</a>
                   <p></p>
                   <p>
-                    We introduce a bilevel learning framework for learning regularizers in variational image reconstruction, using a primal-dual style approach with a-posteriori error bounds and adaptive step sizes to ensure efficient optimization.
+                    We introduce a bilevel learning framework for variational image reconstruction that uses a primal-dual approach with a-posteriori error bounds and adaptive step sizes.
                   </p>
                 </td>
               </tr>		
@@ -108,39 +171,7 @@
             <a href="https://link.springer.com/chapter/10.1007/978-3-031-73281-2_1">paper</a>
             <p></p>
             <p>
-              A DDPM-based framework for generating medical images with corresponding landmark heatmaps to improve anatomical landmark localization. The approach introduces a novel quality assessment technique using a Markov Random Field for landmark matching and a Statistical Shape Model for landmark plausibility checks.
-            </p>
-          </td>
-        </tr>		
-          </td>
-        </tr>
-
-        <!-- FlowSDF -->
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <img src='images/flowsdf.png' width="160">
-            </div>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2405.18087">
-              <span class="papertitle">FlowSDF: Flow Matching for Medical Image Segmentation Using Distance Transforms</span>
-            </a>
-            <br> 
-            <strong>Lea Bogensperger*</strong></a>, 
-            Dominik Narnhofer*</a>, 
-            Alexander Falk</a>, 
-            Konrad Schindler</a>, 
-            Thomas Pock</a> 
-            <br>
-            <em>under review</em>, 2024
-            <br>
-            <a href="https://arxiv.org/abs/2405.18087">arXiv</a>
-            <a href="https://github.com/leabogensperger/FlowSDF">code</a>
-            <p></p>
-            <p>
-              A flow matching framework for generative segmentation of medical images using signed distance functions. This integration allows the noise-injection perturbation
-              process to canonically smooth the distribution of SDF masks.
-            </p>
+              A DDPM-based framework for generating medical images with landmark heatmaps, using a Markov Random Field for matching and a Statistical Shape Model for plausibility checks.            </p>
           </td>
         </tr>		
           </td>
@@ -172,8 +203,7 @@
             <a href="https://github.com/leabogensperger/generative-segmentation-sdf">code</a>
             <p></p>
             <p>
-              A score-based generative model for binary medical image segmentation using signed distance functions. Thereby, the corruptive mechanism by the diffusion model acts on SDF masks instead of the binary masks which yields a more natural distortion. 
-            </p>
+              A score-based generative model for binary medical image segmentation using signed distance functions, where diffusion corrupts SDF masks instead of binary ones for more natural distortions.            </p>
           </td>
         </tr>		
           </td>
@@ -202,8 +232,7 @@
           <a href="https://github.com/leabogensperger/tgv-disc-learning">code</a>
           <p></p>
           <p>
-            We introduce a framework to incorporate general discretization schemes for the second-order total generalized variation (TGV), for which we show variational consistency. Interpolation filters are then learned using a piggyback algorithm. 
-          </p>
+            We introduce a framework for incorporating general discretizations of second-order TGV with variational consistency, and learn interpolation filters via a piggyback algorithm.          </p>
         </td>
       </tr>		
         </td>
@@ -234,8 +263,7 @@
           <a href="https://github.com/leabogensperger/tem-reco">code</a>
           <p></p>
           <p>
-            We develop a joint alignment and reconstruction algorithm for electron tomography that does not require the use of fiducial markers. We show its application within type 1 diabetes research to non-obese diabetic (NOD) mice to study the interaction between immune cells and pancreatic beta cells. 
-          </p>
+We develop a joint alignment and reconstruction algorithm for electron tomography without fiducial markers, applied to studying immune–beta cell interactions in NOD mice for type 1 diabetes research.          </p>
         </td>
       </tr>		
         </td>
@@ -262,8 +290,7 @@
         <a href="https://hal.science/hal-03516542/file/GradPDLoss-revised.pdf">preprint</a>
         <p></p>
         <p>
-          We develop a joint alignment and reconstruction algorithm for electron tomography that does not require the use of fiducial markers. We show its application within type 1 diabetes research to non-obese diabetic (NOD) mice to study the interaction between immune cells and pancreatic beta cells. 
-        </p>
+          We analyze a piggyback-style method for differentiating saddle-point problems, and apply it to learning optimized shearlet transforms for imaging.        </p>
       </td>
     </tr>		
       </td>
@@ -293,8 +320,7 @@
         <a href="https://graz.elsevierpure.com/en/publications/on-the-influence-of-beta-cell-granule-counting-for-classification">paper</a>
         <p></p>
         <p>
-          We use a deep learning approach to investigate the influence of insulin granules in pancreatic beta cells of NOD mice. In a multi-task learning setting, the regression task can aid in discriminating healthy from diabetic samples.
-        </p>
+          We use deep learning to study insulin granules in NOD mouse beta cells, where a multi-task regression aids in distinguishing healthy from diabetic samples.        </p>
       </td>
     </tr>		
       </td>
@@ -324,8 +350,7 @@
         <a href="https://github.com/f-ilic/RobustFeatureAustenit">code</a>
         <p></p>
         <p>
-          We show that deep neural networks can be used to estimate grain density of austenitic steel. Thereby we compare classification and regression models, showing that the learned feature representations are vastly different. 
-        </p>
+          We show that deep neural networks can estimate grain density in austenitic steel, with classification and regression models learning distinct feature representations.        </p>
       </td>
     </tr>		
       </td>
